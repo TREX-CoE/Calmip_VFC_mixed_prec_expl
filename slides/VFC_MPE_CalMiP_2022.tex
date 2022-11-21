@@ -319,9 +319,24 @@ Function name                          & Required precision (VPREC) \\ \midrule
     
     \begin{frame}{Pittfals compiling CHAMP with \texttt{flang-7}}
       \begin{itemize}
-        \item[MPI] \texttt{flang-7} is not able to assign multiple file descriptors to the same file $\longrightarrow$ prevents from running more than one MPI process! 
+        \item[MPI] \texttt{flang-7} is not able to assign multiple file descriptors to the same file $\longrightarrow$ prevents from running more than one MPI process.\\
+        \vspace{2em}
+        WORKAROUND: Limit the number of MPI processes to 1.
       \end{itemize}
-\textit{      MORE PROBLEMS TO BE ADDED}
+      
+    
+    \end{frame}
+    
+    
+    \begin{frame}{Relevant links}
+      \textbf{Schedule and Instructions:}\\
+      \url{https://github.com/TREX-CoE/CalmipTraining/blob/master/content/verificarlo.md}\\
+      
+      \textbf{These slides:}\\
+      \url{https://github.com/TREX-CoE/Calmip_VFC_mixed_prec_expl/blob/master/slides/VFC_MPE_CalMiP_2022.pdf}\\
+      
+      \textbf{CHAMP Delta-Debug scripts:}\\
+      \url{https://github.com/TREX-CoE/Calmip_VFC_mixed_prec_expl/blob/master/scripts/scripts.tar.gz}
     \end{frame}
   
 \end{document}
