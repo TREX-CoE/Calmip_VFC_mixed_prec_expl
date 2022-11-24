@@ -84,11 +84,14 @@
     \begin{frame}{Linking against OpenMPI}
       Use OpenMPI wrapper scripts to include OpenMPI headers and libraries. Make sure to point these wrappers to the appropriate Verificarlo compiler wrappers by exporting the following environment variables    \vspace{1em}\\
       \begin{tabular}{ll}
-        \tabitem\texttt{export CC=mpicc} & \tabitem\texttt{export OMPI\_C=verificarlo-c} \\
+        \tabitem\texttt{export CC=mpicc} & \tabitem\texttt{export OMPI\_CC=verificarlo-c} \\
         \tabitem\texttt{export CXX=mpic++} & \tabitem\texttt{export OMPI\_CXX=verificarlo-c++} \\
         \tabitem\texttt{export FC=mpifort} & \tabitem\texttt{export OMPI\_FC=verificarlo-f}
       \end{tabular}\vspace{1em}\\
-      This will ensure the compiler wrappers are chained in the correct order.
+      This will ensure the compiler wrappers are chained in the correct order.\\
+      
+      \vspace{1em}
+      MPI
     \end{frame}
       
     \begin{frame}{Enabling the Delta-Debug option in Verificarlo}
